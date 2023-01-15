@@ -39,48 +39,52 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 5,
                 ),
               ),
-              Container(
-                  padding: EdgeInsets.all(10.0),
+              Card(
                   color: Colors.white,
                   margin:
                       EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        size: 25,
-                        color: Colors.teal.shade900,
-                      ),
-                      SizedBox(
-                        width: 12,
-                      ),
-                      Text(
-                        '+61 415 555 555',
-                        style: TextStyle(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          size: 25,
                           color: Colors.teal.shade900,
-                          fontFamily: 'PlayfairDisplay',
-                          fontSize: 20,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Text(
+                          '+61 415 555 555',
+                          style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'PlayfairDisplay',
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
                   )),
-              Container(
-                padding: EdgeInsets.all(10),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 color: Colors.white,
-              child: Row(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
 
-                children: [
-                  Icon(Icons.mail,size: 20, color: Colors.teal.shade900),
-                  SizedBox(width: 12),
-                  Text('artem.dev@gmail.com',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontFamily: 'PlayfairDisplay',
-                      color: Colors.teal.shade900,
+                  children: [
+                    Icon(Icons.mail,size: 20, color: Colors.teal.shade900),
+                    SizedBox(width: 12),
+                    Text('artem.dev@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'PlayfairDisplay',
+                        color: Colors.teal.shade900,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
                   
                   
